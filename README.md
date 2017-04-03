@@ -1,2 +1,2 @@
-# leaderboard
-freeCodeCamp Camper leaderboard - React Project
+# Camper Leaderboard
+FreeCodeCamp Camper leaderboard - React Project
