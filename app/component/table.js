@@ -8,10 +8,11 @@ const imgStyle = {
 
 const Table = function (props) {
      let rows = props.user.map(function (user, i) {
+        let u = "https://www.freecodecamp.com/" + user.username;
         return (
             <tr>
         <td>{i}</td>
-        <td><img src ={user.img} style={imgStyle}/><a href="https://www.freecodecamp.com/`${user.username}`"alt="avatar"> {user.username}</a></td>
+        <td><img src ={user.img} style={imgStyle}/><a href={u} alt="avatar" target='_blank'>{user.username}</a></td>
         <td>{user.recent}</td>
         <td>{user.alltime}</td>
          </tr>

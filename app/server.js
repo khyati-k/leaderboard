@@ -24,6 +24,7 @@ class Chart extends React.Component {
     }
     //function to get data
     toggleTable(u) {
+        console.log("in function");
         axios.get(u).then(function (response) {
             this.setState({ data: response.data });
         }.bind(this));
